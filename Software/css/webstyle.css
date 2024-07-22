@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=Onest:wght@700&family=Outfit&family=Poppins:wght@700&family=Vollkorn:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@700&family=Outfit&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=Onest:wght@700&family=Outfit&family=Poppins:wght@700&display=swap');
+        body{
+            background-image: url(/img/bg1.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: fit-content;
+            font-family: 'Outfit',sans-serif;
+            margin: 0%;
+            padding: 0%;
+            height: 30px;
+        }
+        .bg{
+            background-color: rgba(0,0,0,.3);
+            height: 375px;
+        }
+        nav{
+            height: 40px;
+            background-color:black;
+            
+        }
+        .topnav{
+            display: flex;   
+        }
+        a:link, a:visited {
+            /*background-color: rgba(0,0,0,0.8);*/
+            color: white;
+            /*border: 2px solid rgba(0,0,0,10);*/
+            padding: 25px 20px;
+            text-align: center;
+            text-decoration: none; 
+          }
+          h1{
+            margin-top: 0%;
+            width: 260px;
+            padding-left: 20px;
+          }
+          a{
+            height: 5px;
+            width: 60px;
+            font-size:larger;
+            margin-left: 0%;
+          }
+          a:hover, a:active {
+            background-color:white;
+            color: black;
+            margin-top: 5px;
+          }
+          .head{
+            display: flex;
+            justify-content:left;
+            height: 60px;
+            background-color: rgba(0,0,0,.5);
+            border-bottom: 2px solid black;
+        }
+        .container1{
+            /*height: 60vh;*/
+            margin-top: 5%;
+            padding: 0%;
+            overflow: hidden;
+            display: flex;
+            position: relative;
+            font-family: 'Poppins',sans-serif;
+        }
+        .right{
+            flex-direction: column;
+            justify-content: right;
+            margin-left: 15%;
+            
+        }
+        .date-time{
+            color: #fff;
+            font-size: 1.5em;
+        }
+        .amount{
+            position: relative;
+            padding: 5px;
+            outline: none;
+            margin-top: 40px; 
+            margin-left:20%;
+        }
+        button{
+            background-color: #fff;
+        }
+        .container2{
+            position: relative;
+            top: 100px;
+            
+            
+        }
+        .mg{
+            position: relative;
+            left: 50px;
+        }
+        .tata{
+            position: relative;
+            left: 40px;
+        }
+        .nexon{
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        .kona{
+            position: relative;
+            top: 50px;
+            left: 40px;
+        }
+        .tata1{
+            height: 125px;
+            width: 250px;
+            background-color: rgba(0,0,0,.5);
+            border-radius: 10px 10px 0px 0px;
+            border-bottom: 1px solid #000000;
+            position: absolute;
+            top: 150px;
+            left: 80px;
+            transition-duration: 0.5s;
+        }
+        .mg1{
+            height: 125px;
+            width: 250px;
+            background-color: rgba(0,0,0,.5);
+            border-radius: 10px 10px 0px 0px;
+            border: 1px solid#000000;
+            position: absolute;
+            top: 150px;
+            right: 80px;
+            transition-duration: 0.5s;
+        }
+        .kona1{
+            height: 125px;
+            width: 250px;
+            background-color: rgba(0,0,0,.5);
+            border-radius: 10px 10px 0px 0px;
+            border: 1px solid #000000;
+            position: absolute;
+            top: 450px;
+            left: 80px;
+            transition-duration: 0.5s;
+        }
+        .nexon1{
+            height: 125px;
+            width: 250px;
+            background-color: rgba(0,0,0,.5);
+            border-radius: 10px 10px 0px 0px;
+            border: 1px solid #000000;
+            position: absolute;
+            top: 450px;
+            right: 80px;
+            transition-duration: 0.5s;
+        }
+        .tata1:hover{
+           top: 80px;
+           height: 200px;
+           animation-fill-mode: forwards;
+        }
+        .mg1:hover{
+            top: 80px;
+            height: 200px;
+            animation-fill-mode: forwards;
+         }
+         .kona1:hover{
+            top: 380px;
+            height: 200px;
+            animation-fill-mode: forwards;
+         }
+         .nexon1:hover{
+            top: 380px;
+            height: 200px;
+            animation-fill-mode: forwards;
+         }
+         #container4{
+            background-color: black;
+            height: 220px;
+            display: flex;
+            color: white;
+        }
+        .contact{
+            margin-left: 50px;
+            width: 50%;
+        }
+        .about{
+            margin-left: 50px;
+            text-align: justify;
+            margin-right: 80px;
+            width: 50%;
+        }
+        .bottomnav{
+            position: relative;
+            top: 50px;
+            font-family: 'Vollkorn',sans-serif;
+        }
+        #phone{
+           display: flex;
+
+        }

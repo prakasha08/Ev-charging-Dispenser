@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energy Meter Dashboard</title>
+    <link rel="stylesheet" href="/css/webstyle.css" />
+    <link href="./img/icon.png" rel="shortcut icon" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    
+    <div class="bg">
+
+    <nav>
+      <img
+        src="img/photo.png"
+        alt=""
+        height="30px"
+        width="100px"
+        style="margin-top: 2.5px"
+      />
+    </nav>
+    <div class="head">
+      <div class="topnav">
+        <h1  style=" color: white; font-size: 1.6em;">
+          <b><span style="font-size:1.7em ;">EV</span> Charing Station</b>
+         </h1>
+  <a href="index.html">Home</a>
+  <a href="evcar.html">Cars</a>
+  <a href="evbike.html">Bikes</a>
+  <a href="#chart">Chart</a>
+  <a href="#container4">Contacts</a>
+  
+      </div>
+      </div>
+    <div class="container1">
+      <div class="right" style="margin-top: auto">
+        <div class="date-time">
+          <h3 id="date"></h3>
+          <h3 id="time"></h3>
+        </div>
+        <div id="amount">
+          <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Me3lFaZkHZ9wXS" async> </script> </form>
+        </div>
+        </div>
+      </div>
+    <div class="bottomnav">
+      <div class="container3">
+         <div id="chart">
+          <h1>CHART</h1>
+          <img src="img/chart.jpeg" alt="" style="height: 300px; width: 500px; margin-left: 150px;">
+          <br><br>
+         </div>
+         <div id="chart1">
+          <img src="img/chart1.png" alt="" style="height: 300px; width: 500px; margin-left: 150px;">
+          <br><br>
+         </div>
+      </div>
+      <div id="container4">
+        <div class="contact">
+          
+          <h3>CONTACT</h3>
+          <div id="phone">
+            <i class="fa fa-map-marker" style="color: white; position: relative; top: 1px; right: 5px; font-size: 25px;" ></i> <address>Bannari amman institute 
+              of technology,Sathyamagalam</address>
+          </div>
+          
+            <div id="phone">
+            <i class="fa fa-phone" style="color: white; position: relative; top: 15px; right: 5px; font-size: 25px;" ></i> <p>8610559369</p>
+          </div>
+          <div id="phone">
+            <i class="fa fa-envelope" style="color: white; position: relative; top: 15px; right: 5px; font-size: 20px;" ></i> <p>optimers.6@gmail.com</p>
+          </div>
+        </div>
+        <div class="about">
+          <h3>ABOUT US</h3>
+          <p>EV Charging Station which allows the 
+            user to efficiently charge their vehicle 
+            by pre purchasing the energy required 
+            by them which serves in conservation of energy.</p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+  </body>
+</html>

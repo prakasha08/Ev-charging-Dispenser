@@ -1,0 +1,285 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');*/
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=Onest:wght@700&family=Outfit&family=Poppins:wght@700&family=Vollkorn:wght@500&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Onest:wght@700&family=Outfit&family=Poppins:wght@700&display=swap');
+  /*@import url('https://fonts.googleapis.com/css2?family=Onest:wght@700&family=Poppins:wght@700&display=swap');*/
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=Onest:wght@700&family=Outfit&family=Poppins:wght@700&display=swap');
+
+
+
+        body{
+            /*background-image: url(img/bg.jpg);*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: fit-content;
+            font-family: 'Outfit',sans-serif;
+            margin: 0%;
+            padding: 0%;
+            height: 250px;
+            background-color: whitesmoke;
+        }
+        .bg{
+            background-color: rgba(0,0,0,.3);
+            height: 390px;
+        }
+        nav{
+            height: 40px;
+            background-color:black;
+            
+        }
+        .head{
+            display: flex;
+            justify-content:left;
+            height: 60px;
+            background-color: rgba(0,0,0,.8);
+            border-bottom: 2px solid black;
+        }
+        .topnav{
+            display: flex; 
+           
+        }
+        a:link, a:visited {
+            /*background-color: rgba(0,0,0,0.8);*/
+            color: white;
+            /*border: 2px solid rgba(0,0,0,10);*/
+            padding: 25px 20px;
+            text-align: center;
+            text-decoration: none; 
+          }
+          h1{
+            margin-top: 0%;
+            width: 260px;
+            padding-left: 20px;
+          }
+          a{
+            height: 5px;
+            width: 60px;
+            font-size: larger;
+            text-align: center;
+          }
+          a:hover, a:active {
+            background-color:white;
+            color: black;
+            margin-top: 5px;
+            text-align: center;
+          }
+        .container1{
+            /*height: 60vh;*/
+            margin-top: 5%;
+            padding: 0%;
+            overflow: hidden;
+            display: flex;
+            position: relative;
+            font-family: 'Vollkorn',sans-serif;
+        }
+        .right{
+            flex-direction: column;
+            justify-content: right;
+            margin-left: 15%;
+            
+        }
+        .date-time{
+            color: #fff;
+            font-size: 1.5em;
+        }
+       
+        button{
+            background-color: #fff;
+        }
+        #container2{
+            position: relative;
+            height: 140vh;
+        }
+        #chart{
+            position: relative;
+            top: 100px;
+        }
+        #chart1{
+            position: relative;
+            top: 200px;
+        }
+        .img1{
+            display: flex;
+            align-items: center;
+        }
+        .img2{
+            display: flex;
+            align-items: center;
+        }
+        .mg{
+            position: relative;
+            left: 50px;
+        }
+        .mg1{
+            height: 50px;
+            width: 350px;
+            background-color: rgba(0,0,0,.5);
+            border-radius: 10px 10px 0px 0px;
+            border-bottom: 1px solid#000000;
+            position: absolute;
+            top: 200px;
+            left: 400px;
+            transition-duration: 0.5s;
+        }
+        .a2:hover{
+            cursor: pointer;   
+        }
+        .a2:hover .mg{
+            -webkit-filter: blur(2px);
+            filter: blur(2px);
+        }
+        .a2:hover .mg1{
+            height: 170px;
+            background-color: rgba(0,0,0,.5);
+            visibility: visible;
+            top: 80px;
+            animation-fill-mode: forwards;
+        }
+        .a2:hover form{
+            visibility: visible;
+        }
+        .a2:hover ul{
+            visibility: visible;
+        }
+        .tata{
+            position: relative;
+            left: 40px;
+        }
+        .a1:hover{
+            cursor: pointer;   
+        }
+        .a1:hover .tata{
+            -webkit-filter: blur(2px);
+            filter: blur(2px);
+        }
+        .a1:hover .tata1{
+            height: 170px;
+            background-color: rgba(0,0,0,.5);
+            visibility: visible;
+            top: 80px;
+            animation-fill-mode: forwards;
+        }
+        .a1:hover form{
+            visibility: visible;
+        }
+        .a1:hover ul{
+            visibility: visible;
+        }
+        form{
+            visibility: hidden;
+        }
+        ul{
+            visibility: hidden;
+        }
+        .tata1{
+            height: 50px;
+            width: 350px;
+            background-color: rgba(0,0,0,.5);
+            border-radius: 10px 10px 0px 0px;
+            border-bottom: 1px solid #000000;
+            position: absolute;
+            top: 200px;
+            left: 40px;
+            transition-duration: 0.5s;
+        }
+        .kona{
+            position: relative;
+            top: 50px;
+            left: 40px;
+        }
+        .a3:hover{
+            cursor: pointer;   
+        }
+        .a3:hover .kona{
+            -webkit-filter: blur(2px);
+            filter: blur(2px);
+        }
+        .a3:hover .kona1{
+            height: 170px;
+            background-color: rgba(0,0,0,.5);
+            visibility: visible;
+            top: 380px;
+            animation-fill-mode: forwards;
+        }
+        .a3:hover form{
+            visibility: visible;
+        }
+        .a3:hover ul{
+            visibility: visible;
+        }
+        .kona1{
+            height: 50px;
+            width: 350px;
+            background-color: rgba(0,0,0,.5);
+            border-radius: 10px 10px 0px 0px;
+            border-bottom: 1px solid #000000;
+            position: absolute;
+            top: 505px;
+            left: 40px;
+            transition-duration: 0.5s;
+        }
+        .nexon{
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        .a4:hover{
+            cursor: pointer;   
+        }
+        .a4:hover .nexon{
+            -webkit-filter: blur(2px);
+            filter: blur(2px);
+        }
+        .a4:hover .nexon1{
+            height: 170px;
+            background-color: rgba(0,0,0,.5);
+            visibility: visible;
+            top: 380px;
+            animation-fill-mode: forwards;
+        }
+        .a4:hover form{
+            visibility: visible;
+        }
+        .a4:hover ul{
+            visibility: visible;
+        }
+        .nexon1{
+            height: 50px;
+            width: 350px;
+            background-color: rgba(0,0,0,.5);
+            border-radius: 10px 10px 0px 0px;
+            border-bottom: 1px solid #000000;
+            position: absolute;
+            top: 505px;
+            left: 400px;
+            transition-duration: 0.5s;
+        }
+        #container4{
+            background-color: black;
+            height: 220px;
+            display: flex;
+            color: white;
+        }
+        .contact{
+            margin-left: 50px;
+            width: 50%;
+            text-align: justify;
+
+        }
+        .about{
+            margin-left: 50px;
+            text-align: justify;
+            margin-right: 80px;
+            width: 50%;
+        }
+        .bottomnav{
+            position: absolute;
+            top: 1050px;
+            font-family: 'Vollkorn',sans-serif;
+        }
+        #phone{
+           display: flex;
+        }
+        

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Energy Meter Dashboard</title>
+    <link href="img/icon.png" rel="shortcut icon" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="/css/charging_style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+      apiKey: "AIzaSyB1bZ9lXxpZ6u68L24WYWPvywLAFfN3684",
+      authDomain: "check1-580b7.firebaseapp.com",
+      databaseURL: "https://check1-580b7-default-rtdb.firebaseio.com",
+      projectId: "check1-580b7",
+      storageBucket: "check1-580b7.appspot.com",
+      messagingSenderId: "484459339788",
+      appId: "1:484459339788:web:05db8ce8171a7388d4ce29"
+  };
+
+  // Initialize Firebase
+  const app = firebase.initializeApp(firebaseConfig);
+
+  // Get a reference to the Firebase database
+  const database = firebase.database();
+
+  // Get a reference to the button
+  const btn = document.getElementById("btn");
+
+  // Add a click event listener to the button
+  btn.addEventListener("click", () => {
+      // Define the data you want to add to the database (e.g., integer value)
+      const intValue = 0; // Change this to your desired integer value
+
+      // Get a reference to the location where you want to store the data in the database
+      const intDataRef = database.ref("integers");
+
+      // Set the integer value to the database using set()
+      intDataRef.set(intValue)
+          .then(() => {
+              console.log("Integer value saved successfully.");
+          })
+          .catch((error) => {
+              console.error("Error saving integer value:", error);
+          });
+  });
+</script>
+<body>
+    <nav>
+        <img
+            src="/img/photo.png"
+            alt=""
+            height="40px"
+            width="120px"
+            style="margin-top: 2.5px"
+        />
+    </nav>
+    <div class="charging-container">
+        <h1>EV CHARGING STATION</h1>
+        <div class="battery">
+            <div class="battery-head"></div>
+            <div class="battery-body">
+                <i class="fas fa-bolt"></i>
+                <div class="charge"></div>
+            </div>
+        </div>
+    </div>
+    <div class="stop">
+        <button class="btn">STOP</button>
+    </div>
+
+    <!-- Firebase SDK and initialization -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+
+    
+</body>
+</html>
